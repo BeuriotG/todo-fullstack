@@ -22,12 +22,6 @@ exports.signup = (req, res, next) => {
     .catch((err) => res.status(500).json({ err }));
 };
 
-// Login
-// trouver l'adress en DB
-// if pas d'adress, 400 => brouillage de pistes "paire incompatible"
-// vérification des hash de mdp
-// attribution d'un jwt set sur un jour
-
 exports.login = (req, res, next) => {
   User.findOne({ email: req.body.email })
     .then((user) => {
