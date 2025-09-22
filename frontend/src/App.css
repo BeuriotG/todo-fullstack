@@ -1,6 +1,13 @@
-.login-form {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 200px;
-  gap: 1em;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.path-task {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 75vh;
 }

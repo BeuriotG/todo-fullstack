@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  width: 100%;
+}
+
+.header h1 {
+  text-align: center;
+  flex: 2;
+}
+
+.main section {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  margin: auto;
+  gap: 5em;
+}
+
+.main form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  margin-top: 5em;
+  gap: 1em;
+}
+.main form input {
+  height: 2em;
+}
+
+.main form textarea {
+  overflow: scroll;
+}
+
+.main button {
+  height: 3em;
+}
+.main button:hover {
+  cursor: pointer;
+}
+
+.main ul {
+  list-style: none;
+}
+
+.main ul div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1em;
+}

@@ -12,7 +12,9 @@ export async function login(email, password) {
       throw new Error(response.status, response.message);
     }
     const data = await response.json();
-    return data.token;
+    const token = data.token;
+    localStorage.setItem("token", token);
+    return token;
   } catch (err) {
     throw new Error(err.message);
   }
